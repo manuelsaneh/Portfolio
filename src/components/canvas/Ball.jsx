@@ -48,6 +48,7 @@ const BallCanvas = ({ icon }) => {
     <Canvas 
       frameLoop="demand" 
       gl={{ preserveDrawingBuffer: true }}
+      className="cursor-grab"
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
