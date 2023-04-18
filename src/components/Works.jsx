@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion"
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, web_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full">
+      <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] xs:w-[300px] w-full h-full">
         <div className="relative w-full h-[230px]">
           <img 
             src={image}
@@ -85,7 +85,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap md: gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project}/>
         ))}
