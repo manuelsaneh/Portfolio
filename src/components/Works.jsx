@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion"
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, web_link }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className="bg-tertiary p-5 rounded-2xl w-[360px] h-full">
+      <div className="bg-tertiary p-5 rounded-2xl md:w-[360px] w-[300px] h-full">
         <div className="relative w-full h-[230px]">
           <img 
             src={image}
