@@ -107,7 +107,7 @@ const experiences = [
       "React Native",
       "Responsive Design",
       "API Handling",
-      "SEO",
+      "Unit Testing",
       "Git",
       "Debugging and Troubleshooting",
     ],
